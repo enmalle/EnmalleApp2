@@ -112,9 +112,9 @@ public class MiCelulaActivity extends AppCompatActivity {
         for(int i = 0; i < listaDatos.size() ; i++){
             Creyente s = listaDatos.get(i);
             if(i==listaDatos.size()-1){
-             trama = trama + s.getidCreyente();
+             //trama = trama + s.getidCreyente();
             }else{
-                trama = trama + s.getidCreyente()+",";
+                //trama = trama + s.getidCreyente()+",";
             }
         }
 
