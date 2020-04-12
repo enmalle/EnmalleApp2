@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroCreyenteActivity"
+    android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/etRCCedula"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:maxLength="10"
+                    android:hint="Cedula"
+                    android:inputType="none|number" />
+
+                <EditText
+                    android:id="@+id/etRCPNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Primer Nombre"
+                    android:maxLength="50"
+                    android:inputType="textCapCharacters" />
+
+                <EditText
+                    android:id="@+id/etRCSNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Segundo Nombre"
+                    android:maxLength="50"
+                    android:inputType="textCapCharacters" />
+
+                <EditText
+                    android:id="@+id/etRCPApellido"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Primer Paterno"
+                    android:maxLength="50"
+                    android:inputType="textCapCharacters" />
+
+                <EditText
+                    android:id="@+id/etRCSApellido"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Segundo Materno"
+                    android:maxLength="50"
+                    android:inputType="textCapCharacters" />
+
+                <EditText
+                    android:id="@+id/etRCFechaNacimiento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Fecha de Nacimiento  (MM/DD/AAAA)"
+                    android:inputType="datetime" />
+
+                <View
+                    android:id="@+id/firstDivider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="4dp"
+                    android:background="#039BE5" />
+
+                <EditText
+                    android:id="@+id/etRCEstadoCivil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:hint="Estado Civil"
+                    android:inputType="textPersonName" />
+
+
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RadioButton android:id="@+id/rbCasado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="Casado"/>
+                    <RadioButton android:id="@+id/rbSoltero"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="Soltero" />
+                    <RadioButton android:id="@+id/rbViudo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="Viudo" />
+                    <RadioButton android:id="@+id/rbDivorciado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="Divorciado" />
+                    <RadioButton android:id="@+id/rbUnionLibre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="Union Libre" />
+                </RadioGroup>
+
+                <View
+                    android:id="@+id/firstDivider2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="4dp"
+                    android:background="#039BE5" />
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/etRCSexo"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:hint="Sexo"
+                    android:inputType="textCapCharacters"/>
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton android:id="@+id/rbMasculino"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="Masculino"/>
+                    <RadioButton android:id="@+id/rbFemenino"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="Femenino" />
+                </RadioGroup>
+
+</LinearLayout>
+
+                <View
+                    android:id="@+id/firstDivider1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="4dp"
+                    android:background="#039BE5" />
+                <EditText
+                    android:id="@+id/etRCBarrio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textCapCharacters"
+                    android:maxLength="50"
+                    android:hint="Barrio" />
+
+                <EditText
+                    android:id="@+id/etRCCallePrincipal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textCapCharacters"
+                    android:maxLength="100"
+                    android:hint="Direccion Calle principal"/>
+
+                <EditText
+                    android:id="@+id/etRCCalleSecundaria"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textCapCharacters"
+                    android:maxLength="100"
+                    android:hint="Calle secundaria" />
+
+                <EditText
+                    android:id="@+id/etRCNumeroCasa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textCapCharacters"
+                    android:maxLength="10"
+                    android:hint="Numero de casa" />
+
+                <EditText
+                    android:id="@+id/etRCTelefonoCasa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:hint="Telefono de casa" />
+
+                <EditText
+                    android:id="@+id/etRCTelefonoOficina"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:hint="Telefono Oficina" />
+
+                <EditText
+                    android:id="@+id/etRCTelefonoCelular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:hint="Telefono Celular" />
+
+                <Button
+                    android:id="@+id/btRCGuardar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="GUARDAR" />
+
+                <Button
+                    android:id="@+id/btRCCancelar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CANCELAR" />
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

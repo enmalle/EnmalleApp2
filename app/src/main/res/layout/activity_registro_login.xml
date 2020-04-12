@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.RegistroLoginActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="131dp"
+                android:layout_height="103dp"
+                android:layout_marginBottom="30dp"
+                app:srcCompat="@drawable/cdfe" />
+            />
+
+    <EditText
+        android:id="@+id/etRLCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Correo Electronico"
+        android:maxLength="50"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/etRLConfirmarCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Confirmar Correo Electronico"
+        android:maxLength="50"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/etRLCedula"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Cedula de Identidad"
+        android:maxLength="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/etRLPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:maxLength="12"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/etRLConfirmarPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Confirmar Password"
+        android:maxLength="12"
+        android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/btnRLRegistrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#1E88E5"
+                android:text="Registrar"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnRLSalir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:text="Salir"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

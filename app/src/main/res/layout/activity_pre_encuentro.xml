@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PreEncuentroActivity">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnListarPre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#39DEF3"
+            android:gravity="center"
+            android:textSize="12dp"
+            android:text="Lista Candidatos"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnRegistroPre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1AB1F6"
+            android:gravity="center"
+            android:text="Guardar"
+            android:textColor="#FFFFFF"
+            android:textSize="12dp" />
+
+
+        <Button
+            android:id="@+id/btnSalir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#39DEF3"
+            android:gravity="center"
+            android:textSize="12dp"
+            android:text="Salir"
+            android:textColor="#FFFFFF" />
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerPre"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#0091EA"
+        />
+
+
+
+
+
+</LinearLayout>
+
+
