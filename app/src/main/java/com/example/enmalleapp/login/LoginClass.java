@@ -19,7 +19,7 @@ import com.example.enmalleapp.conexion.ConnectionClass;
 
 
 public class LoginClass  extends AppCompatActivity {
-    EditText edtCorreo, edtPassword, edtXIDLider;
+    EditText edtCorreo, edtPassword, edtXIDLider, edtXIDCelula;
     TextView tvRegistrar;
     Button btnLogin;
     String correo, password;
@@ -34,6 +34,7 @@ public class LoginClass  extends AppCompatActivity {
         btnLogin = findViewById(R.id.btnLogin);
         edtXIDLider = findViewById(R.id.edtXIDLider);
         tvRegistrar = findViewById(R.id.tvRegistrar);
+        edtXIDCelula = findViewById(R.id.edtXIDCelula);
 
 
 
@@ -70,7 +71,9 @@ public class LoginClass  extends AppCompatActivity {
         try {
             claseGlobal objGlobal = (claseGlobal)getApplicationContext();
             String id_lider;
+            String id_celula;
             edtXIDLider.setText("");
+            edtXIDCelula.setText("");
             PreparedStatement pst = cc.stConsulta("exec sp_validacion_login ?,?");
             pst.setString(1, edtCorreo.getText().toString());
             pst.setString(2, edtPassword.getText().toString());
@@ -80,10 +83,12 @@ public class LoginClass  extends AppCompatActivity {
             if (rs.next()) {
                 //retorno de informacion
                 edtXIDLider.setText(rs.getString(1));
-                //this.setGlobalIdLider(edtXIDLider.getText().toString());
+                edtXIDCelula.setText(rs.getString(2));
                 id_lider=(edtXIDLider.getText().toString());
+                id_celula=(edtXIDCelula.getText().toString());
                 objGlobal.setIdLider(id_lider);
-                Toast.makeText(getApplicationContext(), "SALUDOS Y BENDICIONES", Toast.LENGTH_SHORT).show();
+                objGlobal.setIdCelula(id_celula);
+                //Toast.makeText(getApplicationContext(), "SALUDOS Y BENDICIONES", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
                 edtCorreo.setText("");

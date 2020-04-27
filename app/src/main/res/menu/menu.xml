@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:title="Nuevo"
+        android:icon="@drawable/ic_nuevo"
+        android:id="@+id/MenuNuevo"
+        app:showAsAction="always"
+        />
+    <item
+        android:title="Guardar"
+        android:icon="@drawable/ic_guardar"
+        android:id="@+id/MenuGuardar"
+        app:showAsAction="always"
+        />
+    <item
+        android:title="Buscar"
+        android:icon="@drawable/ic_buscar"
+        android:id="@+id/MenuBuscar"
+        app:showAsAction="always"
+        />
+    <item
+        android:title="Salir"
+        android:icon="@drawable/ic_exit"
+        android:id="@+id/MenuSalir"
+        app:showAsAction="never"
+        />
+
+
+</menu>

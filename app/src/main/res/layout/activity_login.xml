@@ -79,7 +79,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="4dp"
                 android:ems="10"
-                android:visibility="visible"
+                android:visibility="invisible"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/edtXIDCelula"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:ems="10"
+                android:visibility="invisible"
                 android:inputType="textPersonName" />
 
             <TextView

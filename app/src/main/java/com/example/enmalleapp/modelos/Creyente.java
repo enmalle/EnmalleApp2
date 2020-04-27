@@ -40,12 +40,7 @@ public class Creyente {
 
     public void setFechaNacimiento(String fechaNacimiento) {this.fechaNacimiento = fechaNacimiento;}
 
+    public int getImageDelete() {return imageDelete;}
 
-    public int getImageDelete() {
-        return imageDelete;
-    }
-
-    public void setImageDelete(int imageDelete) {
-        this.imageDelete = imageDelete;
-    }
+    public void setImageDelete(int imageDelete) {this.imageDelete = imageDelete;}
 }

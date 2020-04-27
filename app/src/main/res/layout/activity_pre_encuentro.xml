@@ -7,6 +7,24 @@
     android:orientation="vertical"
     tools:context=".PreEncuentroActivity">
 
+    <include layout="@layout/toolbar"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Candidatos Pre-Encuentro"
+            android:layout_gravity="center"
+            android:textColor="#1976d2"
+            android:textSize="18dp"
+            android:textStyle="italic"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <!--
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -15,7 +33,7 @@
         android:gravity="center">
 
         <Button
-            android:id="@+id/btnListarPre"
+            android:id="@+id/btnListarCandidatoPre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#39DEF3"
@@ -25,7 +43,7 @@
             android:textColor="#FFFFFF" />
 
         <Button
-            android:id="@+id/btnRegistroPre"
+            android:id="@+id/btnRegistroCandidatoPre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#1AB1F6"
@@ -36,7 +54,7 @@
 
 
         <Button
-            android:id="@+id/btnSalir"
+            android:id="@+id/btnSalirCandidatoPre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#39DEF3"
@@ -48,6 +66,8 @@
 
     </LinearLayout>
 
+    -->
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerPre"
         android:layout_width="match_parent"
@@ -55,9 +75,6 @@
         android:layout_height="wrap_content"
         android:backgroundTint="#0091EA"
         />
-
-
-
 
 
 </LinearLayout>
