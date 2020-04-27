@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Buscar"
+        android:icon="@drawable/ic_buscar"
+        android:id="@+id/MenuBuscare"
+        app:showAsAction="always"
+        />
+     <item
+        android:title="Guardar"
+        android:icon="@drawable/ic_guardar"
+        android:id="@+id/MenuGuardare"
+        app:showAsAction="always"
+        />
+    <item
+        android:title="Salir"
+        android:icon="@drawable/ic_exit"
+        android:id="@+id/MenuSalire"
+        app:showAsAction="always"
+        />
+
+</menu>

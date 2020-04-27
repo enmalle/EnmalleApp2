@@ -1,9 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".PosEncuentroActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <include layout="@layout/toolbar"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Candidatos Pos-Encuentro"
+            android:layout_gravity="center"
+            android:textColor="#1976d2"
+            android:textSize="18dp"
+            android:textStyle="italic"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <!--
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+        <Button
+            android:id="@+id/btnListarCandidatoPos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#39DEF3"
+            android:gravity="center"
+            android:textSize="12dp"
+            android:text="Asistencia"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnGuardarCandidatoPos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1AB1F6"
+            android:gravity="center"
+            android:text="Guardar"
+            android:clickable="false"
+            android:textColor="#FFFFFF"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/btnSalirCandidatoPos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#39DEF3"
+            android:gravity="center"
+            android:textSize="12dp"
+            android:text="Salir"
+            android:textColor="#FFFFFF" />
+
+
+    </LinearLayout>
+    -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerPos"/>
+
+
+
+</LinearLayout>
